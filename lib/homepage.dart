@@ -68,7 +68,7 @@ class _HomepageState extends State<Homepage> {
                   )
                 ],
               ),
-              SizedBox(height: 100),
+              SizedBox(height: 50),
               Container(
                 height: 500,
                 child: Swiper(
@@ -80,69 +80,73 @@ class _HomepageState extends State<Homepage> {
                       children: [
                         Column(
                           children: [
-                            Card(
-                              elevation: 8,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(32)),
-                              color: cardColor,
-                              child: Padding(
-                                padding: const EdgeInsets.all(32.0),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    SizedBox(height: 100),
-                                    SizedBox(
-                                      width: 197.0,
-                                      height: 67.0,
-                                      child: Text(
-                                        planets[index].name,
-                                        style: TextStyle(
-                                          fontFamily: 'Poppins',
-                                          fontSize: 48,
-                                          color: Colors.black87,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                        textAlign: TextAlign.left,
-                                      ),
-                                    ),
-                                    SizedBox(
-                                      width: 197.0,
-                                      height: 31.0,
-                                      child: Text(
-                                        'Solar System',
-                                        style: TextStyle(
-                                          fontFamily: 'Poppins',
-                                          fontSize: 20,
-                                          color: secondaryTextColor,
-                                          fontWeight: FontWeight.w600,
-                                        ),
-                                        textAlign: TextAlign.left,
-                                      ),
-                                    ),
-                                    Row(
-                                      children: [
-                                        Text(
-                                          'Know More ',
+                            Padding(
+                              padding: const EdgeInsets.fromLTRB(0, 100, 0, 0),
+                              child: Card(
+                                elevation: 8,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(32)),
+                                color: cardColor,
+                                child: Padding(
+                                  padding: const EdgeInsets.all(32.0),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      SizedBox(height: 100),
+                                      SizedBox(
+                                        width: 197.0,
+                                        height: 67.0,
+                                        child: Text(
+                                          planets[index].name,
                                           style: TextStyle(
                                             fontFamily: 'Poppins',
-                                            fontSize: 16,
-                                            color: const Color(0xff929292),
+                                            fontSize: 48,
+                                            color: Colors.black87,
                                             fontWeight: FontWeight.w600,
                                           ),
                                           textAlign: TextAlign.left,
                                         ),
-                                        Icon(Icons.chevron_right),
-                                      ],
-                                    ),
-                                  ],
+                                      ),
+                                      SizedBox(
+                                        width: 197.0,
+                                        height: 31.0,
+                                        child: Text(
+                                          'Solar System',
+                                          style: TextStyle(
+                                            fontFamily: 'Poppins',
+                                            fontSize: 20,
+                                            color: secondaryTextColor,
+                                            fontWeight: FontWeight.w600,
+                                          ),
+                                          textAlign: TextAlign.left,
+                                        ),
+                                      ),
+                                      Row(
+                                        children: [
+                                          Text(
+                                            'Know More ',
+                                            style: TextStyle(
+                                              fontFamily: 'Poppins',
+                                              fontSize: 16,
+                                              color: const Color(0xff929292),
+                                              fontWeight: FontWeight.w600,
+                                            ),
+                                            textAlign: TextAlign.left,
+                                          ),
+                                          Icon(Icons.chevron_right),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
                           ],
                         ),
                         SizedBox(
-                            height: 200,
-                            width: 300,
+                            height: 250,
+                            width: 400,
                             child: Image.asset(planets[index].iconImage)),
                       ],
                     );
