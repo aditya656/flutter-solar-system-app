@@ -57,6 +57,9 @@ flutter:
     - assets/saturn.png
     - assets/uranus.png
     - assets/venus.png
+    - assets/menu_icon.png
+    - assets/search_icon.png
+    - assets/profile_icon.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
