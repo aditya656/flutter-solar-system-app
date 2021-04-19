@@ -74,7 +74,6 @@ class _HomepageState extends State<Homepage> {
               Container(
                 height: 500,
                 child: Swiper(
-                  index: 1,
                   itemCount: planets.length,
                   itemWidth: MediaQuery.of(context).size.width - 2 * 40,
                   layout: SwiperLayout.STACK,
@@ -176,7 +175,7 @@ class _HomepageState extends State<Homepage> {
                               child: SizedBox(
                                   height: 270,
                                   width: 400,
-                                  child: Image.asset(planets[index].iconImage)),
+                                  child: Hero(tag: planets[index].position,child: Image.asset(planets[index].iconImage))),
                             ),
                           ],
                         ),
