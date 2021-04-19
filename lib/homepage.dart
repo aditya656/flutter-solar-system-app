@@ -26,12 +26,13 @@ class _HomepageState extends State<Homepage> {
         ),
         child: SafeArea(
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(12.0),
                     child: Text(
                       'Explore',
                       style: TextStyle(
@@ -44,7 +45,7 @@ class _HomepageState extends State<Homepage> {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.only(left: 12.0),
                     child: DropdownButton(
                       items: [
                         DropdownMenuItem(
@@ -175,7 +176,10 @@ class _HomepageState extends State<Homepage> {
                               child: SizedBox(
                                   height: 270,
                                   width: 400,
-                                  child: Hero(tag: planets[index].position,child: Image.asset(planets[index].iconImage))),
+                                  child: Hero(
+                                      tag: planets[index].position,
+                                      child: Image.asset(
+                                          planets[index].iconImage))),
                             ),
                           ],
                         ),
