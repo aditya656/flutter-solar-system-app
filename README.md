@@ -1,4 +1,7 @@
 
+https://user-images.githubusercontent.com/68677462/115952980-a7e32480-a506-11eb-97dc-90cbae8f4850.mp4
+
+
 # flutter_solar_system
 
 A new Flutter project for me to understand the layout and navigation part of flutter app development.
