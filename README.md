@@ -3,7 +3,12 @@
 
 # flutter_solar_system
 
-A new Flutter project for me to understand the layout and navigation part of flutter app development.
+A new Flutter project with minimal user interface which was designed in Adobe XD software.
+
+While making this project I understood Fundamental styling and layout widgets in Flutter.
+
+Also I have used a Swiper dependency which helps us to make that stacked cards swipeable.
+
 
 # Screenshots
 
